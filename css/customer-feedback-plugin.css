@@ -1,0 +1,16 @@
+.wp-widget-cfeedback {
+    border: 2px solid #000000;
+    padding: 5px;
+    padding-left: 0;
+    justify-content: space-between;
+}
+
+.wp-widget-cfeedback ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+.wp-widget-cfeedback ul li{
+    margin-bottom: 10px;
+}

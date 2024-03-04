@@ -16,6 +16,9 @@ class Feedback_Widget extends WP_Widget {
         // Widget output
         echo $args['before_widget'];
         echo $args['before_title'] . apply_filters( 'widget_title', __( 'Asiakaspalaute', 'customer-feedback-plugin' ) ) . $args['after_title'];
+
+        echo '<div class="wp-widget-cfeedback">';
+
         echo '<ul>';
         $feedback_posts = new WP_Query( array(
             'post_type'      => 'feedback',
@@ -26,6 +29,9 @@ class Feedback_Widget extends WP_Widget {
             echo '<li><strong>' . get_the_title() . '</strong>: ' . get_the_excerpt() . '</li>';
         endwhile;
         echo '</ul>';
+
+        echo '</div>';
+        
         echo $args['after_widget'];
     }
 
